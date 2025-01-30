@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sriracha&display=swap');
+
+@font-face {
+    font-family: "android";
+    src: url(../fontes/idroid.otf) format(opentype);
+    font-weight: normal;
+
+}
+
+:root{
+    --cor0: #FAF4E3;
+    --cor1: #A5A68F;
+    --cor2: #D9B2A9;
+    --cor3: #F2DBD5;
+    --cor4: #FFFFFF;
+    
+    --fonte-padrao: arial, verdana, helvetica, sans-serif;
+    --font-destaque:'Bebas Neue', sans-serif;
+    --font-android: "android", sans-serif;
+}
+*{
+    margin: 0px;
+    padding:0px;
+}
+body{
+    
+    font-family: var(--fonte-padrao);
+}
+a.externo::after {
+    content: '\00A0\1f517';
+
+}
+header img{
+    padding: 10px;
+    width: 400px;
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+header >h1{
+    color: white;
+    font-family: var(--font-destaque);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+    
+}
+header > p{
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    font-weight: normal;
+    color: black;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    padding-bottom: 50px;
+    
+}
+nav{
+    background-color: var(--cor);
+    padding: 20px;
+    margin: 7px;
+    text-align: center;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.363);
+
+}
+nav > a{
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+nav > a:hover{
+    background-color: var(--cor3);
+    color: var(--cor5);
+    text-decoration: underline;
+
+}
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;   /* essa tag deixa so a parte esquerda de baixo do conteudo arrendodada*/
+    border-bottom-right-radius: 10px;  /* essa tag deixa so a parte direita de baixo do conteudo arrendodada*/
+}
+main h1{
+    color: black;
+    text-align: center;
+    font-family: var(--font-android);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+div{
+    background-color: white;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281) ;
+}
+div > h3{
+    background-color: var(--cor1);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+div > p{
+    text-align: right;
+}
+div > img{
+    border-radius: 20px;
+    padding: 10px;
+}
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+footer > p > a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
+}
