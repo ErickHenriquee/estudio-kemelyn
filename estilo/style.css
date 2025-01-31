@@ -118,7 +118,7 @@ div > img{
 }
 h2{
     text-align: center;
-    
+    font-size: 1.2em;
 }
 footer{
     background-color: var(--cor5);
