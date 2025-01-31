@@ -3,12 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sriracha&display=swap');
 
 @font-face {
-    font-family: "android";
-    src: url(../fontes/idroid.otf) format(opentype);
+    font-family:'padrao';
+    src: url('font/fragmentcore.otf') format('opentype'); /* opentype (otf) ; truetype (ttf)*/
     font-weight: normal;
-
+    font-style: normal;
 }
-
 :root{
     --cor0: #FAF4E3;
     --cor1: #A5A68F;
@@ -17,16 +16,15 @@
     --cor4: #FFFFFF;
     
     --fonte-padrao: arial, verdana, helvetica, sans-serif;
-    --font-destaque:'Bebas Neue', sans-serif;
-    --font-android: "android", sans-serif;
+    --font-destaque: 'Bebas Neue', sans-serif;
+   
 }
 *{
     margin: 0px;
     padding:0px;
 }
 body{
-    
-    font-family: var(--fonte-padrao);
+    font-family: var(--font-destaque);
 }
 a.externo::after {
     content: '\00A0\1f517';
@@ -34,7 +32,7 @@ a.externo::after {
 }
 header img{
     padding: 10px;
-    width: 400px;
+    width: 250px;
 }
 
 header{
@@ -52,7 +50,7 @@ header >h1{
     
 }
 header > p{
-    font-family: var(--fonte-padrao);
+    font-family: var(--font-destaque);
     font-size: 1.2em;
     font-weight: normal;
     color: black;
@@ -99,31 +97,27 @@ main{
 main h1{
     color: black;
     text-align: center;
-    font-family: var(--font-android);
+    font-family: var(--font-destaque);
     font-weight: normal;
     font-size: 1.8em;
 }
-
 div{
-    background-color: white;
-    padding: 10px;
+    display: flex;
+    background-image: linear-gradient(to left, var(--cor2), white);
+    padding: 20px;
     margin: 20px;
     border-radius: 10px;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281) ;
-}
-div > h3{
-    background-color: var(--cor1);
-    color: white;
-    padding: 10px;
-    margin: -10px -10px 0px -10px;
-    border-radius: 10px 10px 0px 0px;
-}
-div > p{
-    text-align: right;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
 }
 div > img{
+    display: inline-block;
     border-radius: 20px;
+    width: 200px;
     padding: 10px;
+}
+h2{
+    text-align: center;
+    
 }
 footer{
     background-color: var(--cor5);
