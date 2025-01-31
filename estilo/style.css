@@ -117,9 +117,11 @@ div > img{
     padding: 10px;
 }
 h2{
-    font-family: var(--fonte-padrao);
-    text-align: center;
+    font-family: var(--font-destaque);
     font-size: 1.2em;
+    font-weight: normal;
+    text-align: center;
+    color: black;
 }
 footer{
     background-color: var(--cor5);
